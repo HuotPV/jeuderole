@@ -5,7 +5,7 @@
 using namespace std;  // je crois que c'est OK d'utiliser le namespace std ici, c'est juste dans les headers que ce n'est pas bien
  
 
-Magicien::Magicien() : Personnage(), m_mana(100){}
+Magicien::Magicien() : Personnage(), m_mana(100){} // Constructeur par defaut de Magicien = constructeur par defaut de Personnage + declaration de l'attribut m_mana
 Magicien::Magicien(string nom) : Personnage(nom), m_mana(100){}
 
 void Magicien::bouleDeFeu(Personnage &cible)

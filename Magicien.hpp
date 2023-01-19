@@ -6,7 +6,7 @@
 #include <string>
 #include "Personnage.hpp"
 
-class Magicien : public Personnage  // créer une classe Guerrier qui hérite de la classe personnage
+class Magicien : public Personnage  // créer une classe Magicien qui hérite de la classe personnage
 {
 
     public:
@@ -25,4 +25,4 @@ class Magicien : public Personnage  // créer une classe Guerrier qui hérite de
 }; // pas oublier le ; ici
 
 
-#endif // GUERRIER_H_INCLUDED
+#endif // MAGICIEN_H_INCLUDED
