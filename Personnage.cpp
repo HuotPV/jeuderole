@@ -21,7 +21,7 @@ void Personnage::recevoirDegats(int nbDegats)
     cout << m_nom << " perds " << nbDegats << " PV." << endl;
 }
 
-void Personnage::coupDePoing(Personnage &cible)
+void Personnage::coupDePoing(Personnage &cible) const
 {
     cible.recevoirDegats(10);
 }

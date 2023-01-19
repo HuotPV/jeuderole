@@ -14,7 +14,7 @@ class Personnage
     Personnage(std::string nom); // surcharge du constructeur
 
     void recevoirDegats(int nbDegats); // Ici on ne garde que le prototype des méthodes.
-    void coupDePoing(Personnage &cible);
+    void coupDePoing(Personnage &cible) const;
 
     private:
     int m_vie;
