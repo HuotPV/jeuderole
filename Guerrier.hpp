@@ -11,6 +11,8 @@ class Guerrier : public Personnage  // créer une classe Guerrier qui hérite de
 
     public:
 
+    Guerrier();
+    Guerrier(std::string nom);
     void doubleCoupDePoing(Personnage &cible) const;
 
 
