@@ -15,6 +15,9 @@ class Personnage
 
     void recevoirDegats(int nbDegats); // Ici on ne garde que le prototype des méthodes.
     void coupDePoing(Personnage &cible) const;
+    void afficherEtat() const;
+    std::string getNom() const;
+    int getVie() const;
 
     private:
     int m_vie;

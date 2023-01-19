@@ -6,8 +6,20 @@ using namespace std;  // je crois que c'est OK d'utiliser le namespace std ici, 
  
 
 Personnage::Personnage() : m_nom("Sans nom"), m_vie(100){}
-
 Personnage::Personnage(string nom) : m_nom(nom), m_vie(100){}
+
+void Personnage::afficherEtat() const
+{
+    cout << m_nom << " a " << m_vie << " points de vie." << endl;
+}
+string Personnage::getNom() const
+{
+    return m_nom;
+}
+int Personnage::getVie() const
+{
+    return m_vie;
+}
 
 void Personnage::recevoirDegats(int nbDegats)
 {
@@ -18,7 +30,7 @@ void Personnage::recevoirDegats(int nbDegats)
         m_vie = 0;
     }
 
-    cout << m_nom << " perds " << nbDegats << " PV." << endl;
+    cout << m_nom << " perd " << nbDegats << " PV." << endl;
 }
 
 void Personnage::coupDePoing(Personnage &cible) const
