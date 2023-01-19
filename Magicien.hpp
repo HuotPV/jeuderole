@@ -16,6 +16,7 @@ class Magicien : public Personnage  // créer une classe Magicien qui hérite de
     void bouleDeFeu(Personnage &cible);
     void bouleDeGlace(Personnage &cible);
     void coupDePoing(Personnage &cible) const; // ici, on "ecrase" la méthode coupDePoing de Personnage.
+    void afficherEtat() const;
 
     private:
 

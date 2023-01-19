@@ -19,7 +19,7 @@ class Personnage
     std::string getNom() const;
     int getVie() const;
 
-    private:
+    protected:
     int m_vie;
     std::string m_nom;
 };

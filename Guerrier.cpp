@@ -13,3 +13,10 @@ void Guerrier::doubleCoupDePoing(Personnage &cible) const
 {
     cible.recevoirDegats(20);
 }
+
+void Guerrier::afficherEtat() const
+{
+    cout << m_nom << " a " << m_vie << " points de vie, mais c'est un guerrier !" << endl;
+    /* Guerrier a le droit d'utiliser les attributes m_nom et m_vie définis dans la classe mère Personnage, 
+    car ces derniers sont désormais "protected", et non plus private */
+}
